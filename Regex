@@ -1,0 +1,6 @@
+import re
+
+p = re.compile('ab{0,3}')
+
+print(p.match('ababbc'))
+print(p.finditer('ababbc'))
