@@ -1,6 +1,12 @@
 import re
 
-p = re.compile('ab{0,3}')
+print(re.match(".*[.](?!bat$)[^.]*$", "abc.exe"))
 
-print(p.match('ababbc'))
-print(p.finditer('ababbc'))
+p = re.compile(r'\W+')
+print(p.split('This is a test, short and sweet, of split().'))
+
+p2 = re.compile(r'(\W+)')
+print(p2.split('This... is a test.'))
+
+p3 = re.compile('x*')
+print(p3.sub('-', 'abxd'))
