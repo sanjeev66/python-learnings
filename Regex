@@ -8,5 +8,13 @@ print(p.split('This is a test, short and sweet, of split().'))
 p2 = re.compile(r'(\W+)')
 print(p2.split('This... is a test.'))
 
-p3 = re.compile('x*')
+p3 = re.compile('')
 print(p3.sub('-', 'abxd'))
+#Apparently every string has null strings inside it??
+
+p4 = re.compile('section{ (?P<name> [^}]* ) }', re.VERBOSE)
+print(p4.sub(r'subsection{\1}','section{First}'))
+
+print(re.sub("b+", "x", "bbbb BBBB"))
+
+

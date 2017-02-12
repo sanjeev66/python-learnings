@@ -1,0 +1,5 @@
+def longest(s1, s2):
+    # your code
+    return ''.join(sorted(set(list(s1)) | set(list(s2))))
+
+print(longest("aretheyhere", "yestheyarehere"))

@@ -1,0 +1,14 @@
+import re
+
+def filter_list(l):
+    l2 = []
+
+    for item in l:
+        if type(item) is int:
+            l2.append(item)
+        else:
+            pass
+
+    return l2
+
+print(filter_list([1,'a','b',0,15,1,'1']))
